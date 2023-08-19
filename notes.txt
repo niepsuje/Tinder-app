@@ -1,0 +1,23 @@
+    Commit 1: 
+    "Strting project. Pages and routing in React"
+
+
+
+1.Tworzę bazę MongoDB https://www.mongodb.com/atlas?utm_campaign=ania_kubow&utm_source=youtube&utm_medium=influencers&utm_term=atlas&utm_content=tinder_clone
+- użytkownik i wiadomości 
+    Chcemy wczytać te dane z naszej aplikacji
+
+2.Usuwam niepotrzebne pliki logo, css i testowe
+
+3.Ustawiam plik package.json na odpowiednią wersję Reacta
+
+4.Tworzę podstrony: Home, Dashboard, Onboarding
+
+5.npm i react-router-dom
+
+6.Twożę end-pointy Home, Dashboard, OnBoarding
+
+7.Rozwiązanie błędu -> Zmieniłem plik index.js żeby pasował do starszej wersji Reacta
+
+
+
