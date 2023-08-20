@@ -1,5 +1,5 @@
     Commit 1: 
-    "Strting project. Pages and routing in React"
+    "1. Strting project. Pages and routing in React"
 
 
 
@@ -18,6 +18,23 @@
 6.Twożę end-pointy Home, Dashboard, OnBoarding
 
 7.Rozwiązanie błędu -> Zmieniłem plik index.js żeby pasował do starszej wersji Reacta
+
+
+
+
+    Commit 2:
+    "Homepage UI"
+
+
+1. css dla najwaniejszych UI
+
+2. homepage
+
+3. logo
+
+4. nav bar + css
+
+
 
 
 
