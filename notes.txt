@@ -127,4 +127,16 @@
 
     -> dla przycisku "CREATE ACCOUNT" pod handleClick ustawiam setIsSignUp=true
 
-17. Dodanie zdjęcia tła
+
+
+
+
+
+
+        Commit 5:
+        "AuthModal UI (3)"
+
+17. Dodanie zdjęcia tła.
+    -> w css używam adresu url
+
+18. ustawiam czcionkę dla napisu "Swipe Right@" - .primary-title
