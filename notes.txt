@@ -113,3 +113,18 @@
     -> użyjemy isSignUp przy inpucie potweirdzenia hasła
 
 
+
+
+
+
+
+        Commit 5:
+        "AuthModal UI (3)"
+
+16. Kiedy nacisnę "CREATE ACCOUNT" chcę mieć inny AuthModal niż jak nacisnę "Log in"
+    -> czyli kliknę na przycisk "Log in" ustawiam setIsSignUp=false, ponieważ się logujemy
+    -> Ustawiam przesyłanie isSignUp do AuthModal.js i ustawiam isSignUp w Home.js bazowo na true
+
+    -> dla przycisku "CREATE ACCOUNT" pod handleClick ustawiam setIsSignUp=true
+
+17. Dodanie zdjęcia tła
