@@ -67,12 +67,49 @@
 
 6. css dla auth-modal
 
+
+
+
+
+        Commit 4:
+        "AuthModal UI (2)"
+
 7. Przesyłamy równiez setShowModal do komponentu Nav
     Home.js
             <Nav minimal={false} authToken={authToken} setShowModal={setShowModal}/>
     Nav.js
             const Nav = ({ minimal, authToken, setShowModal}) => {...}
+    
+    -> dodaje w Nav.js onClick w przycisku "Log in" i ustawiam go na setShowModal(true)
+    -> dzięki temu moge włączyć modal klikając "Log in" lub CREATE ACCOUNT
+    -> a zamykam modal zawsze za pomocą "ⓧ"
 
+8. Blokuję przycisk "Log in", żeby nie działał kiedy mam już modal i chcę wpisywać dane 
 
+    -> do przycisku "Log in" dodaje disabled={showModal}
+    -> żeby to zadziałało musze wysłać showModal z Home.js z <Nav>
+    -> dodaje css .nav-button:disabled
+
+9. Modal - Dam możliwość wpisania się osobą które do tej pory się nie wpisały, albo możliwość zalogowania się ponownie
+
+    -> użytkownik będzie wierał czy jest nowym użytkownikiem czy tylko sie loguje 
+
+10. handleSubmit zapobiega automatycznemu odświerzaniu, chemy pozostać na stronie
+
+11. Dodaje <inputy> + przycisk + css
+
+12. Wysyłam komunikat jeśli hasło nie jest takie samo - "zrób coś z tym!"
+
+13. GET THE APP + css
+
+14. try -> dodaje do handleSubmit
+    -> "popraw hasło", lub
+    -> robimy zaczątek do "logujesz się do bazy danych"
+    -> to będzie zalżało od tego czy isSignUp = true/false
+
+15 musimy wybrać czy się logujemy czy rejetrujemy bo AuthModal będzie wyglądał wtedy inaczej
+    -> rejetracja = email + 2x password
+    -> login in = email + 1x password
+    -> użyjemy isSignUp przy inpucie potweirdzenia hasła
 
 
