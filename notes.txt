@@ -1,5 +1,5 @@
-    Commit 1: 
-    "1. Strting project. Pages and routing in React"
+        Commit 1: 
+        "1. Strting project. Pages and routing in React"
 
 
 
@@ -22,8 +22,8 @@
 
 
 
-    Commit 2:
-    "Homepage UI"
+        Commit 2:
+        "Homepage UI"
 
 
 1. css dla najwaniejszych UI
@@ -34,6 +34,44 @@
 
 4. nav bar + css
 
+
+
+
+
+        Commit 3:
+        "AuthModal UI"
+
+1. Nowy plik w components - AuthModal.js
+
+2. Będziemy mieć przycisk który otwiera AuthModal na podstawie warunków
+
+3. w Homepage będziemy uzywać useState zeby ZAPISAĆ stan czy modal jest pokazywany, czy nie:
+    -> definuje model
+    -> ustawiam zmianę pokazywania modelu
+
+4. Zmiana pokazywania modelu następuje po kliknięciu z przyciski
+
+5. Muszę przesłać setShowModal do środka modalu
+    Home.js        
+            {showModal && (
+                <AuthModal setShowModal={setShowModal}/>
+            )}
+
+    AuthModal.js
+            const AuthModal = ({ setShowModal }) => {....}
+
+    -> Jeśli showModal jest prawdą to pokaz  mi AuthModal
+    -> setShowModal={setShowModal} 
+        - pozwoli nam ustwaiać stan w innym komponencie czyli w AM
+        - odbierzemy stan modalu w AM
+
+6. css dla auth-modal
+
+7. Przesyłamy równiez setShowModal do komponentu Nav
+    Home.js
+            <Nav minimal={false} authToken={authToken} setShowModal={setShowModal}/>
+    Nav.js
+            const Nav = ({ minimal, authToken, setShowModal}) => {...}
 
 
 
