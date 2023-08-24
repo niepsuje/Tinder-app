@@ -133,10 +133,27 @@
 
 
 
-        Commit 5:
-        "AuthModal UI (3)"
+        Commit 6:
+        "AuthModal UI (4)"
 
 17. Dodanie zdjęcia tła.
     -> w css używam adresu url
 
 18. ustawiam czcionkę dla napisu "Swipe Right@" - .primary-title
+
+
+
+
+
+
+        Commit 7:
+        "OnBoarding (1)"
+
+1. Tworzę szkielet sekcje formulaża dla wprowadzania danych użytkownika
+    -> imię
+    -> płeć
+    -> pokaż płeć
+    -> about mieć
+    -> profil
+    -> zdjęcia
+
