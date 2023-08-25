@@ -157,3 +157,25 @@
     -> profil
     -> zdjęcia
 
+2. przycisk "submit" - prześlij
+
+
+
+
+
+
+        Commit 8:
+        "OnBoarding (2)"
+
+3. stylowanie w pliku css
+    -> nowa sekcja
+    -> chcę żeby sekcje "onboarding" pojawiały się obok siebie
+    -> flex-direction: column - w każdej z tych sekcji
+    -> odstępy
+
+
+next:
+4. przechowywanie danych - useState
+    -> formData, setFormData 
+
+

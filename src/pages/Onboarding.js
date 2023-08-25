@@ -1,4 +1,5 @@
 import Nav from "../components/Nav"
+import {useState} from 'react'
 
 const OnBoarding = () => {
 
@@ -47,25 +48,24 @@ const OnBoarding = () => {
                             onChange={handleChange}
                         />
 
-                        <label htmlFor="dob_month">Birthday</label>
+
                         <input
                             id="dob_month"
                             type="number"
                             name="dob_day"
                             placeholder="MM"
                             required={true}
-                            value={""}
+                            value={"formData.dob_month"}
                             onChange={handleChange}
                         />
 
-                        <label htmlFor="dob_day">Birthday</label>
                         <input
                             id="dob_year"
                             type="number"
                             name="dob_year"
                             placeholder="YYYY"
                             required={true}
-                            value={""}
+                            value={"formData.dob_year"}
                             onChange={handleChange}
                         />
                         </div>
@@ -73,14 +73,14 @@ const OnBoarding = () => {
 
                         <label>Gander</label>
                         <div className="multiple-input-container">
-                        <input
-                            id="man-gender-identity"
-                            type="radio"
-                            name="gender_identity"
-                            value="man"
-                            onChange={handleChange}
-                            checked={false}
-                        />
+                            <input
+                                id="man-gender-identity"
+                                type="radio"
+                                name="gender_identity"
+                                value="man"
+                                onChange={handleChange}
+                                checked={false}
+                            />
                             <label htmlFor="man-gender-identity">Man</label>
                             <input
                                 id="woman-gender-identity"
@@ -103,12 +103,13 @@ const OnBoarding = () => {
                         </div>
 
                         <label htmlFor="show-gender">Show gender on my profile</label>
+                        
                         <input
-                                id="show-gender"
-                                type="checkbox"
-                                name="show_gender"
-                                onChange={handleChange}
-                                checked={false}
+                            id="show-gender"
+                            type="checkbox"
+                            name="show_gender"
+                            onChange={handleChange}
+                            checked={false}
                         />
 
                         <label>Show Me</label>
@@ -152,11 +153,10 @@ const OnBoarding = () => {
                             onChange={handleChange}
                         />
                         <input type="submit"/>
-
                     </section>
 
                     <section>
-                        <label htmlFor="about">Profile Profile</label>
+                        <label htmlFor="url">Profile Profile</label>
                         <input
                             id="url"
                             type="url"
