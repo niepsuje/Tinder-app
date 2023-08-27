@@ -174,8 +174,21 @@
     -> odstępy
 
 
-next:
+
+
+
+        Commit 9:
+        "OnBoarding (3)"
+
 4. przechowywanie danych - useState
     -> formData, setFormData 
 
+5. Aby zapisać nową .valu i .name używam setFormData
+    -> pobieram cały poprzedniStan
+    -> teraz aktuaizuje jedną z informacji - [name] : value
+
+6. Teraz mogę zminić wartości w formulażu 
+    -> value={formData.first_name} itd.
+
+7. console loguje formData żeby sprawdzić czy dane są zapisywane
 
