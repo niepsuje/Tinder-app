@@ -192,3 +192,17 @@
 
 7. console loguje formData żeby sprawdzić czy dane są zapisywane
 
+
+
+
+
+        Commit 10:
+        "OnBoarding (4)"
+
+8. Przypisanie formData do inputów typu "radio"
+
+9. Pod "Profile Profile" można wkleić link do zdjęci a i wyświetli się pod spodem
+
+
+
+
