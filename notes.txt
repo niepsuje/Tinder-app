@@ -221,3 +221,13 @@
 3. kopiuję css dotyczące "card"
 
 
+
+
+
+
+        Commit 12:
+        "Dashboard UI (2)"
+
+4. Dodanie informacji tekstowej w którą stronę zostało przesunięte zdjęcie
+
+
