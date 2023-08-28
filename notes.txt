@@ -206,3 +206,18 @@
 
 
 
+
+
+        Commit 11:
+        "Dashboard UI"
+
+1. Robię nową stronę Dashboard UI - przeciąganie osób w prawo/lewo
+
+2. Instaluję gotowe rozwiązanie "card" z githuba
+    -> https://github.com/3DJakob/react-tinder-card-demo/blob/master/src/App.css
+    -> npm i react-tinder-card
+    -> npm install --save @react-spring/web@9.5.5
+
+3. kopiuję css dotyczące "card"
+
+
