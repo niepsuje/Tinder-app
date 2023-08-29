@@ -272,3 +272,17 @@
 
 
 
+
+
+        Commit 14:
+        "ChatContainer UI (1)"
+
+3. Uzupełniam komponenty: atrybuty, komponenty
+
+4. Dodaje jeszcze dwa komponenty do komponentu ChatDisplay.js
+	-> Chat.js   -  historia rozmowy
+	-> ChatInput  -  pole wprowadzania treści
+    -> ![[Zrzut ekranu 2023-08-29 o 16.05.26.png]]
+	    -> oczywiście nie chcemy pokazywać tych komponentów w tym samym czasie
+
+

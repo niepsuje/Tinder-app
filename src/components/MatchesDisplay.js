@@ -2,7 +2,7 @@ const MatchesDisplay = () => {
 
 
     return (
-        <div className="">MatchesDisplay
+        <div className="matches-display">
 
         </div>
     )
