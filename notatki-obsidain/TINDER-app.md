@@ -11,7 +11,7 @@
 
 3.Ustawiam plik package.json na odpowiednią wersję Reacta
 
-4.Twożę podstrony: Home, Dashboard, Onboarding
+4.Tworzę podstrony: Home, Dashboard, Onboarding
 
 5.npm i react-router-dom
 
@@ -260,6 +260,8 @@
     -> ChatHeader.js
     -> MatchesDisplay.js
     -> ChatDisplay.js
+![[Zrzut ekranu 2023-08-29 o 14.04.40.png]]
+
 
 2. PRZENOSZĘ NOTAKI DO FOLDERU notatki-obsidian
     -> TINDER-app.md
@@ -270,9 +272,3 @@
 
 
 
-
-
-
-
-
--> notatki-obsidian ---> TINDER-app <---

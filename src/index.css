@@ -209,7 +209,7 @@ nav .logo-container .logo {
 }
 
 
-/*----- Dashboard Page -----*/
+/*----- Dashboard -----*/
 .dashboard {
     display: flex;
     justify-content: space-between;
@@ -259,3 +259,6 @@ nav .logo-container .logo {
     bottom: 0;
     padding: 10px;
 }
+
+
+/*----- ChatContainer -----*/
