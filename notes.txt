@@ -231,3 +231,22 @@
 4. Dodanie informacji tekstowej w którą stronę zostało przesunięte zdjęcie
 
 
+
+
+
+
+        Commit 13:
+        "Dashboard UI (3)"
+
+5. css
+
+6. Nowy plik ChatCointainer.js 
+
+7. css 
+    -> .dashboard .swipe-container
+    -> .dashboard .card-container
+    -> .dashboard .swipe-info
+    -> .card h3
+
+
+
