@@ -303,3 +303,19 @@
 	-> client - wklejam do niego wszystko to co zrobiliśmy do tej pory
 	-> server
 
+
+
+
+
+
+        Commit 17:
+        "Setting up our NodeJS backend"
+
+1. w folderze server instaluję:
+	-> npm init
+	-> npm i nodemon
+
+2. ustawiam skrypty dla client i dla service
+	-> "start:frontend": "react-scripts start",
+	-> "start:backend": "nodemon index.js"
+	-> mogę działać na dwóch terminalach
