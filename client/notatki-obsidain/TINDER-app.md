@@ -319,3 +319,24 @@
 	-> "start:frontend": "react-scripts start",
 	-> "start:backend": "nodemon index.js"
 	-> mogę działać na dwóch terminalach
+	
+
+
+
+
+
+        Commit 18:
+        "Express Routing"
+
+1. instaluje:
+	-> express 
+	-> mongodb
+	-> dotenv (sekretne przechowywanie zmiennych)
+	-> bcrypt (do haszowania haseł)
+	-> cors (komunikacja z backend-em)
+	-> uuid (tworzenie unikatowych id)
+	-> jsonwebtoken (do asynchronicznego logowania się, kiedy logujemy się jako istniejący user)
+
+2. Tworzenie serwera za pomocą exress.js 
+	-> w index.js
+	-> zrobienie pierwszego routingu - odpiewiedź json dla przeglądarki
