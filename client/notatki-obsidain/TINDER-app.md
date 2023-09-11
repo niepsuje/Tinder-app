@@ -329,7 +329,7 @@
         "Express Routing"
 
 1. instaluje:
-	-> express 
+	-> express (do routingu)
 	-> mongodb
 	-> dotenv (sekretne przechowywanie zmiennych)
 	-> bcrypt (do haszowania haseł)
@@ -340,3 +340,26 @@
 2. Tworzenie serwera za pomocą exress.js 
 	-> w index.js
 	-> zrobienie pierwszego routingu - odpiewiedź json dla przeglądarki
+
+
+
+
+
+        Commit 19:
+        "Signing users up, MongoClient insertOne()"
+
+1.  J eśli zrobię wizytę na adres http://localhost:8000/signup
+	-> to wtedy chcę wysłać dane do database
+
+	-> łączę database z aplikacją Node.js
+![[Zrzut ekranu 2023-09-10 o 15.18.02.png]]
+![[Zrzut ekranu 2023-09-10 o 15.19.26.png]]
+	-> używam tego linku 3. ...
+![[Zrzut ekranu 2023-09-10 o 15.23.50.png]]
+	-> trzeba wymienić hasło
+![[Zrzut ekranu 2023-09-10 o 15.24.29.png]]
+
+
+	-> decyduje co stanie się z danymi z formularza po kliknięciu "submit"
+	-> po kliknięciu chę wysłać te dane do backend-u
+	-> potrzebujemy app.post()
