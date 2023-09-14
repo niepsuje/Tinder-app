@@ -1,10 +1,14 @@
 import { useState } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
-const AuthModal = ({ setShowModal, setIsSignUp, isSignUp }) => {
+const AuthModal = ({ setShowModal, isSignUp }) => {
     const[ email, setEmail] = useState(null)
     const[ password, setPassword] = useState(null)
     const[ confirmPassword, setConfirmPassword] = useState(null)
     const[ error, setError] = useState(null)
+
+    let navigate = useNavigate()
 
     console.log(email, password, confirmPassword)
 
@@ -13,13 +17,19 @@ const AuthModal = ({ setShowModal, setIsSignUp, isSignUp }) => {
         setShowModal(false)
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         try {
             if( isSignUp && ( password !== confirmPassword )) {
                 setError('Password need to match!')
+                return 
             }
-            console.log('make a post request to our database')
+            console.log('posting', email, password )
+            const response = await axios.post('http://localhost:8000/signup', { email, password })
+
+            const success = response.status === 201
+
+            if (success) navigate('/onboarding')
         
         } catch (error) {
             console.log(error)

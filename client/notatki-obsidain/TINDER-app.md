@@ -363,3 +363,33 @@
 	-> decyduje co stanie się z danymi z formularza po kliknięciu "submit"
 	-> po kliknięciu chę wysłać te dane do backend-u
 	-> potrzebujemy app.post()
+
+
+
+
+
+
+        Commit 20:
+        "Signing users up, MongoClient insertOne()"
+
+1. Robimy zapytanie do naszej bazy danych w AuthModal.js
+	-> używamy do tego axios
+	-> jeśli odpowiedź jest 'success' 201 to pozwoli to nam przejść do. nowej strony
+
+2. Chcemy dodać hash hasło dodając użytkownika (w index.js)
+	-> najpierw id użytkownika - dodaję paczkę uuid
+	-> potem hasło hash poprzez paczkę bcrypt
+	-> kiedy to mamy wysyłamy to do naszej bazy danych
+
+3. Sprawdzam po e-mailu czy taki użytkownik już nie istnieje. 
+	-> ustawiam status 409 jeśli istnieje
+
+4. sanitizedEmail - czyszczę email z dużych liter
+
+5. Metody .find(), collection(), .db(), connect(), insertOne() pochodzą z mongodb
+
+6. Terach chcę wygenerować token - użyjemy go do logowania się do aplikacji
+	-> jwt - jsonwebtoken - zrobi to za nas
+	-> jwt - mógłbym zużyć do tego secretKey, ale tym razem tego nie zrobię
+
+
