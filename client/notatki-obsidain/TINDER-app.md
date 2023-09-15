@@ -348,7 +348,7 @@
         Commit 19:
         "Signing users up, MongoClient insertOne()"
 
-1.  J eśli zrobię wizytę na adres http://localhost:8000/signup
+1.  Jeśli zrobię wizytę na adres http://localhost:8000/signup
 	-> to wtedy chcę wysłać dane do database
 
 	-> łączę database z aplikacją Node.js
@@ -393,3 +393,20 @@
 	-> jwt - mógłbym zużyć do tego secretKey, ale tym razem tego nie zrobię
 
 
+
+
+
+
+        Commit 21:
+		"Cookies"
+
+1. const respons - przyda mi się do zrobienia cookies
+	-> email, userId, token które zwracam tutaj:
+	 res.status(201).json({ token, userId: generatedUserId, email: sanitizedEmail})
+
+2. Dla tej odpowiedzi instaluję paczkę na frontend
+	-> npm i react-cookie
+	-> dokumentacja https://github.com/bendotcodes/cookies/tree/main/packages/react-cookie
+	-> setCookie - kiedy otrzymam odpowiedź z serwera ustawiam cookie
+	-> teraz po wprowadzeniu usera mamy cookie:
+	![[Zrzut ekranu 2023-09-15 o 09.01.04.png]]
