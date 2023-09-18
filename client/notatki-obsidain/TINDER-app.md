@@ -410,3 +410,26 @@
 	-> setCookie - kiedy otrzymam odpowiedź z serwera ustawiam cookie
 	-> teraz po wprowadzeniu usera mamy cookie:
 	![[Zrzut ekranu 2023-09-15 o 09.01.04.png]]
+	
+
+
+
+
+
+        Commit 22:
+		"Logging in / MongoClient findOne() "
+
+3. Teraz możemy użyć cookie żeby wiedzieć że jesteśmy sprawdzeni pod kontem autentyczności
+
+4. robimy app.post('/login', req, res) ...
+
+5. Jeśli jest zalogowany to wtedy ścieżka 'signup' w innym przypadku 'login'
+	-> axios.post(`http://localhost:8000/${isSignUp ? 'signup' : 'login'}`, { email, password })
+
+6. Kiedy
+	-> jest success i jest zalogowany to nawiguj do '/onboarding'
+		if (success && isSignUp) navigate('/onboarding')
+	-> jest success i nie jest zalogowany to nawiguj do '/dashboard'
+		if (success && !isSignUp) navigate('/dashboard')
+
+7. teraz możemy się logować i przechodzimy do /dashboard
