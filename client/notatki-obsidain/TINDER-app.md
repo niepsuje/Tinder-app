@@ -417,7 +417,7 @@
 
 
         Commit 22:
-		"Logging in / MongoClient findOne() "
+		"Logging in / MongoClient findOne()"
 
 3. Teraz możemy użyć cookie żeby wiedzieć że jesteśmy sprawdzeni pod kontem autentyczności
 
@@ -433,3 +433,24 @@
 		if (success && !isSignUp) navigate('/dashboard')
 
 7. teraz możemy się logować i przechodzimy do /dashboard
+
+
+
+
+
+
+        Commit 22:
+		"OnBoarding / MongoClient updateOne()"
+
+1. Cookie są nam potrzebne z tego powodu że możemy teraz dodać pełne informacje do tego obiektu 
+
+2. Dodajemy dane do istniejącego obiektu. Stworzonego podczas rejestracji usera
+
+3. w AuthModal.js chcę przesłać tylko token, bo tylko na tym nam zależy 
+	-> w cookie będzie tylko token
+
+5. Dodajemy dane do istniejącego obiektu. Stworzonego podczas rejestracji usera
+
+6. pokazuje zdjęcie dopiero wtedy kiedy zaistnieje formData.url
+	-> {formData.url && <img src={formData.url} alt="profile pic preview"/>}
+

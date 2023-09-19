@@ -1,10 +1,11 @@
 import Nav from "../components/Nav"
 import {useState} from 'react'
+import { useCookies } from 'react-cookie'
+
 
 const OnBoarding = () => {
-
+    const [ cookies, setCookie, removeCookie ] = useCookies(['user'])
     const [formData, setFormData] = useState({
-        user_id: '',
         first_name: "",
         dob_day: "",
         dob_month: "",
@@ -195,7 +196,7 @@ const OnBoarding = () => {
                             onChange={handleChange}
                         />
                         <div className="photo-container">
-                            <img src={formData.url} alt="profile pic preview"/>
+                            {formData.url && <img src={formData.url} alt="profile pic preview"/>}
                         </div>
                     </section>
 
