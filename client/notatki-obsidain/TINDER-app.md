@@ -439,7 +439,7 @@
 
 
 
-        Commit 22:
+        Commit 23:
 		"OnBoarding / MongoClient updateOne()"
 
 1. Cookie są nam potrzebne z tego powodu że możemy teraz dodać pełne informacje do tego obiektu 
@@ -454,3 +454,21 @@
 6. pokazuje zdjęcie dopiero wtedy kiedy zaistnieje formData.url
 	-> {formData.url && <img src={formData.url} alt="profile pic preview"/>}
 
+
+
+
+
+
+        Commit 24:
+		"OnBoarding / MongoClient updateOne()"
+
+1. Chcę zaktualizować user'a. index.js:
+	-> app.put('/user'...
+
+3. Przywracam userId, bo jednak go potrzebuję
+
+4. Szukamy tego użytkownika przez user id
+	-> const query = { user_id: formData.user_id }
+	
+	![[Zrzut ekranu 2023-09-19 o 08.58.17.png]]
+	![[Zrzut ekranu 2023-09-19 o 08.57.49.png]]
