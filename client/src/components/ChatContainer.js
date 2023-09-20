@@ -4,10 +4,10 @@ import ChatDisplay from "./ChatDisplay"
 
 
 
-const ChatCointainer = () => {
+const ChatCointainer = ({ user }) => {
     return (
     <div className="chat-container">
-        <ChatHeader/>
+        <ChatHeader user={user}/>
 
         <div>
             <button className="option">Matches</button>

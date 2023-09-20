@@ -472,3 +472,29 @@
 	
 	![[Zrzut ekranu 2023-09-19 o 08.58.17.png]]
 	![[Zrzut ekranu 2023-09-19 o 08.57.49.png]]
+	
+
+
+
+
+
+        Commit 25:
+		"Getting One User / MongoClient findOne()"
+
+1. Chcemy uzyskać więcej informacji o naszych użytkownikach, żeby uruchomić mach-owanie, chat itp. Najpierw musimy mieć dostęp do wszystkich user-ów a potem wybrać tego zalogowanego.
+
+2. Robię zapytanie w Dashboard.js do serwera poprzez axios 
+	-> pobieram dane użytkownika i
+	-> zapisuje je do huka serUser
+
+3. Dodaje useEffect - za każdym razem kiedy user się zmieni wzywamy tą funkcję
+
+4. Robię wylogowanie się 
+	-> usuwam cookies
+	-> przeładowanie okna przeglądarki
+
+5. w Dashboard.js, ChatHeader.js ustawiam nawę użytkownika i miniaturę zdjęcia.
+
+
+
+
