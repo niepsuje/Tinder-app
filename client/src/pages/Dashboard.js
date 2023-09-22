@@ -9,9 +9,11 @@ import axios from 'axios'
 const Dashboard = () => {
 
     const [user, setUser] = useState(null)
+    const [ genderedUsers, setGenderedUsers ] = useState(null)
     const [ cookies, setCookie, removeCookie ] = useCookies(null)
 
     const userId = cookies.UserId
+
     const getUser = async () => {
       try {
           const response = await axios.get('http://localhost:8000/user', {
@@ -23,36 +25,32 @@ const Dashboard = () => {
       }
     }
 
+
+    const getGenderedUsers = async () => {
+      try {
+          const response = await axios.get('http://localhost:8000/gendered-users', {
+              params: {gender: user?.gender_interest}
+          })
+          setGenderedUsers(response.data)
+      } catch (error) {
+          console.log(error)
+      }
+  }
+
+
+
     useEffect(() => {
         getUser()
-    }, [])
+        getGenderedUsers()
+    }, [user, genderedUsers])
+
 
 
     console.log('user', user)
+    console.log('gendered users', genderedUsers)
 
 
-    const characters = [
-        {
-          name: 'Richard Hendricks',
-          url: 'https://imgur.com/oPj4A8u.jpg'
-        },
-        {
-          name: 'Erlich Bachman',
-          url: 'https://imgur.com/oPj4A8u.jpg'
-        },
-        {
-          name: 'Monica Hall',
-          url: 'https://imgur.com/oPj4A8u.jpg'
-        },
-        {
-          name: 'Jared Dunn',
-          url: 'https://imgur.com/oPj4A8u.jpg'
-        },
-        {
-          name: 'Dinesh Chugtai',
-          url: 'https://imgur.com/oPj4A8u.jpg'
-        }
-    ]
+
 
 
     const [lastDirection, setLastDirection] = useState()
@@ -76,7 +74,7 @@ const Dashboard = () => {
             <div className="swipe-container">
                 <div className="card-container">
                     
-                    {characters.map((character) =>
+                    {genderedUsers.map((character) =>
                         <TinderCard 
                             className='swipe' 
                             key={character.name} 

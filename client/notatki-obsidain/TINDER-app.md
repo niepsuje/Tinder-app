@@ -494,7 +494,20 @@
 	-> przeładowanie okna przeglądarki
 
 5. w Dashboard.js, ChatHeader.js ustawiam nawę użytkownika i miniaturę zdjęcia.
+	
 
+
+
+
+
+        Commit 26:
+		"Getting User By Gender / MongoClient find()"
+
+1. Teraz zrobimy jakieś Match'e i sprawimy że pojawią się one w małych kartach które zrobimy  w Dashboard
+	-> match'e będę wybierał tylko na podstawie moich preferencji
+	-> jedyni użytkownicy którzy będą mi odpowiadać będą nimi tylko na podstawie preferencji
+
+2. Oraz będziemy mieć opcję żeby z nimi chatować
 
 
 
