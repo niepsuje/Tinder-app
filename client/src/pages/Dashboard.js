@@ -10,6 +10,7 @@ const Dashboard = () => {
 
     const [user, setUser] = useState(null)
     const [ genderedUsers, setGenderedUsers ] = useState(null)
+    const [lastDirection, setLastDirection] = useState()
     const [ cookies, setCookie, removeCookie ] = useCookies(null)
 
     const userId = cookies.UserId
@@ -45,15 +46,10 @@ const Dashboard = () => {
     }, [user, genderedUsers])
 
 
-
-    console.log('user', user)
-    console.log('gendered users', genderedUsers)
+    console.log(genderedUsers);
 
 
 
-
-
-    const [lastDirection, setLastDirection] = useState()
   
     const swiped = (direction, nameToDelete) => {
       console.log('removing: ' + nameToDelete)
@@ -74,15 +70,15 @@ const Dashboard = () => {
             <div className="swipe-container">
                 <div className="card-container">
                     
-                    {genderedUsers.map((character) =>
+                    {genderedUsers?.map((character) =>
                         <TinderCard 
                             className='swipe' 
-                            key={character.name} 
-                            onSwipe={(dir) => swiped(dir, character.name)} 
-                            onCardLeftScreen={() => outOfFrame(character.name)}>
-                            <div style={{ backgroundImage: 'url(' + character.url + ')' }} 
+                            key={genderedUsers.name} 
+                            onSwipe={(dir) => swiped(dir, genderedUsers.name)} 
+                            onCardLeftScreen={() => outOfFrame(genderedUsers.name)}>
+                            <div style={{ backgroundImage: 'url(' + genderedUsers.url + ')' }} 
                                 className='card'
-                            ><h3>{character.name}</h3>
+                            ><h3>{genderedUsers.first_name}</h3>
                             </div>
                         </TinderCard>
                     )}

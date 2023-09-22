@@ -511,3 +511,10 @@
 
 
 
+
+
+
+        Commit 27:
+		"Getting User By Gender / MongoClient find() (2)"
+
+3. Jeśli ta płeć istnieje w wyszukiwaniu to ją zmapuję, tych userów
