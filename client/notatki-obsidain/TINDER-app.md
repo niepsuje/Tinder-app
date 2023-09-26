@@ -518,3 +518,22 @@
 		"Getting User By Gender / MongoClient find() (2)"
 
 3. Jeśli ta płeć istnieje w wyszukiwaniu to ją zmapuję, tych userów
+
+
+
+
+
+
+        Commit 28:
+		"Updating Matches / MongoClient find() (2)"
+
+1. Aktualizacja machów w Dashboard.js
+	-> /addmatch
+	-> wysyłamy userId i matchUserId
+	-> getUser() - aktualizujemy, czyli pobieramy na nowo usera
+
+3. Dodanie machów do naszego usera w index.js /addmatch
+	-> szukamy nas samych w bazie - usera który jest wpisany
+	-> aktualizujemy tablicę machów i 
+	-> pchamy tą tablicę do machUserId
+	
