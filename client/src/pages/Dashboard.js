@@ -87,7 +87,7 @@ const Dashboard = () => {
 
 
 
-    //const filteredGenderedUsers = genderedUsers?.filter(genderedUser => !matchedUserIds.includes(genderedUser.user_id))
+    const filteredGenderedUsers = genderedUsers?.filter(genderedUser => !matchedUserIds.includes(genderedUser.user_id))
   
 
     
@@ -99,7 +99,7 @@ const Dashboard = () => {
             <div className="swipe-container">
                 <div className="card-container">
                     
-                    {genderedUsers?.map((genderedUser) => (
+                    {filteredGenderedUsers?.map((genderedUser) => (
                         <TinderCard
                             className="swipe"
                             key={genderedUser.user_id}                      // ? .first_name

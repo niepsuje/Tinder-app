@@ -525,7 +525,7 @@
 
 
         Commit 28:
-		"Updating Matches / MongoClient find() (2)"
+		"Updating Matches / MongoClient find()"
 
 1. Aktualizacja machów w Dashboard.js
 	-> /addmatch
@@ -536,4 +536,24 @@
 	-> szukamy nas samych w bazie - usera który jest wpisany
 	-> aktualizujemy tablicę machów i 
 	-> pchamy tą tablicę do machUserId
-	
+
+
+
+
+
+
+        Commit 29:
+		"Updating Matches / MongoClient find() (2)"
+
+3. matchedUserIds - z obiektów tworzę tablicę z user_id i dodaje mój własny user_id
+
+4. filteredGenderedUsers - jeśli genderUser nie istnieje w matchUserIds to w pożadku, to możemy zwrócić 
+
+5. Pokazanie par w Dashboard 
+	-> ChatContainer.js - tutaj przesyłam matches do MatchesDisplay
+	-> MatchesDisplay.js - odbieramy te matches, czyli user-ów którzy są zarejestrowani i których wrzuciliśmy do tablicy
+
+6. MatchesDisplay.js - piszemy frontend
+
+7. index.js - uzupełniamy wielu użytkowników po userIds w bazie danych
+
