@@ -557,3 +557,19 @@
 
 7. index.js - uzupełniamy wielu użytkowników po userIds w bazie danych
 
+
+
+
+
+
+        Commit 30:
+		"Display chat history"
+
+1. Ustawienie przycisków w Dashboard
+	-> ustawienie ChatDisplay.js
+
+2. Pozyskanie messages ze from_userId oraz to_userId
+
+3. Przesłanie danych messages do komponentów
+
+4. Przygotowanie Chat.js 

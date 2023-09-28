@@ -1,12 +1,12 @@
 import Nav from "../components/Nav"
-import {useState} from 'react'
+import { useState } from 'react'
 import { useCookies } from 'react-cookie'
 import { useNavigate } from 'react-router-dom'
 import axios from "axios"
 
 
 const OnBoarding = () => {
-    const [ cookies, setCookie, removeCookie ] = useCookies(['user'])
+    const [cookies, setCookie, removeCookie] = useCookies(['user'])
     const [formData, setFormData] = useState({
         user_id: cookies.UserId,
         first_name: "",
@@ -42,11 +42,11 @@ const OnBoarding = () => {
         console.log('e', e)
         const value = e.target.value
         const name = e.target.name
-        console.log('value'+ value, 'name'+ name)
+        console.log('value' + value, 'name' + name)
 
         setFormData((prevState) => ({
             ...prevState,
-            [name] : value
+            [name]: value
         }))
 
         console.log(formData)
@@ -58,7 +58,7 @@ const OnBoarding = () => {
         <>
             <Nav
                 minimal={true}
-                setShowModal={() => {}}
+                setShowModal={() => { }}
                 ShowModal={false}
             />
             <div className="onboarding">
@@ -78,40 +78,40 @@ const OnBoarding = () => {
                             value={formData.first_name}
                             onChange={handleChange}
                         />
-                        
+
 
                         <label>Birthday</label>
                         <div className="multiple-input-container">
-                        <input
-                            id="dob_day"
-                            type="number"
-                            name="dob_day"
-                            placeholder="DD"
-                            required={true}
-                            value={formData.dob_day}
-                            onChange={handleChange}
-                        />
+                            <input
+                                id="dob_day"
+                                type="number"
+                                name="dob_day"
+                                placeholder="DD"
+                                required={true}
+                                value={formData.dob_day}
+                                onChange={handleChange}
+                            />
 
 
-                        <input
-                            id="dob_month"
-                            type="number"
-                            name="dob_month"
-                            placeholder="MM"
-                            required={true}
-                            value={formData.dob_month}
-                            onChange={handleChange}
-                        />
+                            <input
+                                id="dob_month"
+                                type="number"
+                                name="dob_month"
+                                placeholder="MM"
+                                required={true}
+                                value={formData.dob_month}
+                                onChange={handleChange}
+                            />
 
-                        <input
-                            id="dob_year"
-                            type="number"
-                            name="dob_year"
-                            placeholder="YYYY"
-                            required={true}
-                            value={formData.dob_year}
-                            onChange={handleChange}
-                        />
+                            <input
+                                id="dob_year"
+                                type="number"
+                                name="dob_year"
+                                placeholder="YYYY"
+                                required={true}
+                                value={formData.dob_year}
+                                onChange={handleChange}
+                            />
                         </div>
 
 
@@ -148,7 +148,7 @@ const OnBoarding = () => {
                         </div>
 
                         <label htmlFor="show-gender">Show gender on my profile</label>
-                        
+
                         <input
                             id="show-gender"
                             type="checkbox"
@@ -198,7 +198,7 @@ const OnBoarding = () => {
                             value={formData.about}
                             onChange={handleChange}
                         />
-                        <input type="submit"/>
+                        <input type="submit" />
                     </section>
 
                     <section>
@@ -211,7 +211,7 @@ const OnBoarding = () => {
                             onChange={handleChange}
                         />
                         <div className="photo-container">
-                            {formData.url && <img src={formData.url} alt="profile pic preview"/>}
+                            {formData.url && <img src={formData.url} alt="profile pic preview" />}
                         </div>
                     </section>
 
