@@ -573,3 +573,11 @@
 3. Przesłanie danych messages do komponentów
 
 4. Przygotowanie Chat.js 
+
+
+
+
+
+
+        Commit 31:
+		"Adding new message"
