@@ -581,3 +581,14 @@
 
         Commit 31:
 		"Adding new message"
+
+
+
+
+
+
+        Commit 32:
+		"Syntax correction"
+
+
+1. MatchesDisplay.js -> filteredMatchedProfiles -> para jest widoczna tylko jeśli dwie osoby przesuną w prawo 

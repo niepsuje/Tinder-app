@@ -1,13 +1,10 @@
-import ChatHeader from "./ChatHeader"
-import MatchesDisplay from "./MatchesDisplay"
-import ChatDisplay from "./ChatDisplay"
+import ChatHeader from './ChatHeader'
+import MatchesDisplay from './MatchesDisplay'
+import ChatDisplay from './ChatDisplay'
 import { useState } from 'react'
 
-
-const ChatCointainer = ({ user }) => {
-    const [ clickedUser, setClickedUser ] = useState(null)
-
-    console.log('clickUser', clickedUser);
+const ChatContainer = ({ user }) => {
+    const [clickedUser, setClickedUser] = useState(null)
 
     return (
         <div className="chat-container">
@@ -18,11 +15,11 @@ const ChatCointainer = ({ user }) => {
                 <button className="option" disabled={!clickedUser}>Chat</button>
             </div>
 
-            {!clickedUser && <MatchesDisplay matches={user.matches} setClickedUser={setClickedUser}/>}
+            {!clickedUser && <MatchesDisplay matches={user.matches} setClickedUser={setClickedUser} />}
 
-            {clickedUser && <ChatDisplay user={user} clickedUser={clickedUser}/>}
+            {clickedUser && <ChatDisplay user={user} clickedUser={clickedUser} />}
         </div>
     )
 }
 
-export default ChatCointainer
+export default ChatContainer
