@@ -3,19 +3,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 screen 1:
-![](<../screens/Zrzut ekranu 2023-09-30 o 07.23.34.png>)
+![](<screens/Zrzut ekranu 2023-09-30 o 07.23.34.png>)
 
 screen 2:
-![](<../screens/Zrzut ekranu 2023-09-10 o 14.40.47.png>)
+![](<screens/Zrzut ekranu 2023-09-10 o 14.40.47.png>)
 
 screen 3:
-![](<../screens/Zrzut ekranu 2023-09-30 o 07.23.45.png>)
+![](<screens/Zrzut ekranu 2023-09-30 o 07.23.45.png>)
 
 screen 4:
-![](<../screens/Zrzut ekranu 2023-09-30 o 07.39.56.png>)
+![](<screens/Zrzut ekranu 2023-09-30 o 07.39.56.png>)
 
 screen 5:
-![](<../screens/Zrzut ekranu 2023-11-20 o 14.15.45.png>)
+![](<screens/Zrzut ekranu 2023-11-20 o 14.15.45.png>)
 
 
 
